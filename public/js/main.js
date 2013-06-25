@@ -7,11 +7,9 @@
  			var last = response.responseJSON.name_last;
 		var fullName = first + " " + last;
 			$('#name').html(fullName);
-
-
-
-			
+		
 	}
+
  	});
 }); 
 $(document).ready(function() {
@@ -25,7 +23,8 @@ $(document).ready(function() {
 			html.css('display', 'none');
 			$(this).before(html);
 			html.slideDown(600);
-			$('.school_name').last().val('');
+			html.find('input').val('');
+
 			return false;
 	
 	});
@@ -38,7 +37,7 @@ var experience_block_link = $('.experience_block_add');
 			html.css('display', 'none');
 			$(this).before(html);
 			html.slideDown(600);
-			$('.experience_block').last().val('');
+			html.find('input').val('');
 			return false;
 	});
  

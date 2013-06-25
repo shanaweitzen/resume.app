@@ -14,7 +14,7 @@
         </script>
 		<style>
 			
-			fieldset{
+			form {
         margin: auto;
       }
 
@@ -25,48 +25,50 @@
       <fieldset class="form-inline">
           <legend>Name</legend>
           
-              <label for="signup_name"> First Name </label>
+              <label for="signup_name"> First </label>
              
-              <input id="name_first" type="text" placeholder="John" class="input-small"/>
+              <input id="name" type="text" placeholder="John"/>
+
             </div>
           </div>
-              <label for="signup-name">MI <label>
-                  <input id="MI" type="text" class="input-small" placeholder="L.">
-                      <label for="signup_name"> Last Name</label>
-                        <input id="name_last" type="text" class="input-small" placeholder="Smith">
+                      <label for="signup_name"> Last </label>
+                        <input id="name_last" type="text"  placeholder="Smith">
                             </fieldset>
             <fieldset form-horizontal>
-                  <legend>Contact Info</legend>
+                  <legend> Address </legend>
+                  <div class="address_block">
                       <div class="control-group">
-                      <label for="Address" class="control-label"> Address</label>
+                      <label for="Address" class="control-label"> Address </label>
                     <div class="controls">
-                  <input id="Address" type="text" placeholder="e.g. 1234 Candly Lane Court" class="input-small"> </input>
+                  <input id="Address" type="text" placeholder="e.g. 1234 Candly Lane Court" > </input>
             </div>
       </div>
+    </div>
 
       <div class="control-group">
             <label for="City" class="control-label"> City </label>
             <div class="controls">
-           <input id="City" type="text" placeholder" "> </input>
+           <input id="City" type="text" placeholder="La Jolla"</input>
       </div>
     </div>
 
 <div class="control-group">
-  <label for="State" class="control-label"> State </label>
-  <div class="controls">
-    <input id="State" type="text" placeholder=
-    "California">
-  </div> 
-</div>
-
-      <div class="control-group">
-            <label for="Zip" class="control-label"> Zip </label>
-            <div class="controls">
-            <input id="Zip" type="text"> </input>
-        </div>
-      </div>
-
-        <div class="control-group">  
+          <label for="State" class="control-label"> State </label>
+              <div class="controls">
+                  <input id="State" type="text" placeholder="CA" class="input-small">
+                    </div> 
+                        </div>
+                            <div class="control-group">
+                               <label for="Zip" class="control-label"> Zip </label>
+                                  <div class="controls">
+                                    <input id="Zip" type="text" class="input-small" placeholder="92137"> </input>
+                                      </div>
+                                        </div>
+                                          </fieldset>
+                                  
+                                          <fieldset> 
+                                            <legend> Contact Information </legend>     
+                                              <div class="control-group">  
             <label for="phone_number" class="control-label"> Phone Number </label>
             <div class="controls">
             <input id="phone_number" type="text" placeholder="(xxx) xxx-xxxx"> </input>
@@ -93,7 +95,7 @@
         <div class="control-block">
           <label class="control-label"> Degree </label>
           <div class="controls">
-            <input class="degree_name" type="text"></input>
+            <input class="degree_name" type="text" class-"input-small"></input>
           </div>
         </div>
         </div>
@@ -117,13 +119,13 @@
             <div class="control-block">
             <label class="control-label"> Organization </label>
             <div class="controls">
-            <input class="school_name" type="text"></input>  
+            <input class="school_name" type="text" class="input-small"></input>  
           </div>
         </div>
         <div class="control-block">
           <label class="control-label"> Role </label>
           <div class="controls">
-            <input class="role_name" type="text"></input>
+            <input class="role_name" type="text" class="input-small"></input>
           </div>
         </div>
         </div>
@@ -144,8 +146,8 @@
       <legend> Accomplishments </legend>
            <div class="control-group">
               <div class="accomplishment_block">
-                <label class="control-label">Accomplishment</label>
-                <input type="text"></input>
+                <label class="control-label"> Accomplishment  </label>
+                <input type="text" class="input-small"> </input>
 
     </div>
   </div>
