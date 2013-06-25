@@ -2,12 +2,31 @@
  	console.log('im alive');
  	$.ajax('/api/resumes/51c207d4236ea4a370000001',{
  		complete : function(response){
+ 			var object = response.responseJSON;
  			console.log(response.responseJSON);
- 			var first =  response.responseJSON.name_first;
+ 			var first =  object.name_first;
  			var last = response.responseJSON.name_last;
-		var fullName = first + " " + last;
+			var fullName = first + " " + last;
 			$('#name').html(fullName);
-		
+			
+			var street_number = object.contact_info.street_address.street;
+			$('#street_number').html(street_number);
+
+			var city = object.contact_info.street_address.city;
+			$('#city').html(city);
+
+			var state = object.contact_info.street_address.state;
+			$('#state').html(state);
+
+			var zip = object.contact_info.street_address.zip_code;
+			$('#zip').html(zip);
+
+			var phone_number = object.contact_info.phone;
+			$('#phone_number').html(phone_number);
+
+			var email_address = object.contact_info.email;
+			$('#email_address').html(email_address);
+
 	}
 
  	});
