@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<link rel="stylesheet" href="css/normalize.css">
+	<!--	<link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+        <script>
+      
+        </script>
+		<style>
+			
+			fieldset{
+        margin: auto;
+      }
+
+			</style>
+	</head>
+	<body>
+    <form id="userDataForm">
+      <fieldset class="form-inline">
+          <legend>Name</legend>
+          
+              <label for="signup_name"> First Name </label>
+             
+              <input id="name_first" type="text" placeholder="John" class="input-small"/>
+            </div>
+          </div>
+              <label for="signup-name">MI <label>
+                  <input id="MI" type="text" class="input-small" placeholder="L.">
+                      <label for="signup_name"> Last Name</label>
+                        <input id="name_last" type="text" class="input-small" placeholder="Smith">
+                            </fieldset>
+            <fieldset form-horizontal>
+                  <legend>Contact Info</legend>
+                      <div class="control-group">
+                      <label for="Address" class="control-label"> Address</label>
+                    <div class="controls">
+                  <input id="Address" type="text" placeholder="e.g. 1234 Candly Lane Court" class="input-small"> </input>
+            </div>
+      </div>
+
+      <div class="control-group">
+            <label for="City" class="control-label"> City </label>
+            <div class="controls">
+           <input id="City" type="text" placeholder" "> </input>
+      </div>
+    </div>
+
+<div class="control-group">
+  <label for="State" class="control-label"> State </label>
+  <div class="controls">
+    <input id="State" type="text" placeholder=
+    "California">
+  </div> 
+</div>
+
+      <div class="control-group">
+            <label for="Zip" class="control-label"> Zip </label>
+            <div class="controls">
+            <input id="Zip" type="text"> </input>
+        </div>
+      </div>
+
+        <div class="control-group">  
+            <label for="phone_number" class="control-label"> Phone Number </label>
+            <div class="controls">
+            <input id="phone_number" type="text" placeholder="(xxx) xxx-xxxx"> </input>
+      </div>
+    </div>
+
+<div class="control-group"> 
+        <label for="email_address" class="control-label"> Email Address </label>
+        <div class="controls"> <input id="email_address" type="text" placeholder=" email@gmail.com"> </input></div>
+        
+      </div>
+       </fieldset>
+
+<fieldset class="form-horizontal">
+  <div class="control-group">
+    <legend> Education </legend>
+          <div class="education_block">
+            <div class="control-block">
+            <label class="control-label"> School </label>
+            <div class="controls">
+            <input class="school_name" type="text"></input>  
+          </div>
+        </div>
+        <div class="control-block">
+          <label class="control-label"> Degree </label>
+          <div class="controls">
+            <input class="degree_name" type="text"></input>
+          </div>
+        </div>
+        </div>
+      </div>
+        <span class="help-block">
+
+
+
+    <a href='#' class="education_block_add">
+     + add 
+    </a>
+  </span>
+        
+
+</fieldset>
+
+<fieldset class="form-horizontal">
+  <div class="control-group">
+    <legend> Experience </legend>
+          <div class="experience_block">
+            <div class="control-block">
+            <label class="control-label"> Organization </label>
+            <div class="controls">
+            <input class="school_name" type="text"></input>  
+          </div>
+        </div>
+        <div class="control-block">
+          <label class="control-label"> Role </label>
+          <div class="controls">
+            <input class="role_name" type="text"></input>
+          </div>
+        </div>
+        </div>
+      </div>
+        <span class="help-block">
+
+
+
+    <a href='#' class="experience_block_add">
+     + add 
+    </a>
+  </span>
+        
+
+</fieldset>
+
+  <fieldset class="form-horizontal">
+      <legend> Accomplishments </legend>
+           <div class="control-group">
+              <div class="accomplishment_block">
+                <label class="control-label">Accomplishment</label>
+                <input type="text"></input>
+
+    </div>
+  </div>
+  <span class="help-block"><a href='#' class="accomplishment_block_add">
+    +add 
+  </a>
+</span>
+
+
+</fieldset>
+<button type="submit" class="btn"> Save &amp; Continue </button>
+</form>
+  </body>
+  </html>
+
+  <!--    <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '367128903410244',                        // App ID from the app dashboard
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+    function cb_login(response){
+        if(response.authResponse){
+      
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me', function(response) {
+            $('#name').val(response.name);
+            console.log(response);
+        });
+       
+        } else {
+    console.log('User cancelled login or did not fully authorize.');
+   }
+ });
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+	 <h1> Sign up for my awesome app! </h1>
+	 <form>
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="e.g. John Smith" />
+                </li>
+                <li>
+                    <label for="degree">BS Degree</label>
+                    <input id="degree" name="hasDegree" value="1" type="checkbox" />
+                </li>
+                <li>
+                    <label for="summary">Bio</label>
+                    <textarea id="summary"></textarea>
+                </li>
+                <li>
+                    <label for="dob">Birth Date</label>
+                    <input id="dob" type="date" />
+                </li>
+                <li>
+                    <label for="favcolor">Favorite Color</label>
+                    <input id="favcolor" type="color" />
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" />
+                </li>
+                <li>
+                    <label for="ready">Are you ready?</label>
+                    <select id="ready">                        <requires children - <options> 
+                        <option value="0">Yup</option>
+                        <option value="1">Nope</option>
+                     </select>
+                </li>
+                <li>
+                    <input type="submit" value="save &amp; continue" />
+                </li>
+            </ul>
+        </form>
+	</body> -->
+</html>

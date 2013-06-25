@@ -1,0 +1,37 @@
+body{
+	width: 100%;
+	height:100%;
+	position: relative;
+}
+html {
+	background: rgb(123, 121, 143);
+}
+#container {
+	
+	margin: 0 auto;
+	padding: 10px;
+	border-width: 5px;
+	border-style: solid;
+	background: #68CAE8;
+
+
+}
+section{
+	font-family: sans-serif;
+
+
+}
+
+header, h1, h2, h3, p 
+{
+	font-family: sans-serif;
+	padding-left: 5px;
+	
+}
+h1, h2{
+	border-top: 1px double;
+}
+
+title{
+	padding-left: 5px;
+}
