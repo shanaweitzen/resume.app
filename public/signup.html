@@ -22,68 +22,79 @@
 	</head>
 	<body>
     <form id="userDataForm">
-      <fieldset class="form-inline">
+      <fieldset class="form-horizontal">
+        <div class="name_block">
+        <div class="control-group">
           <legend>Name</legend>
           
-              <label for="signup_name"> First </label>
-             
-              <input id="name" type="text" placeholder="John"/>
-
-            </div>
-          </div>
-                      <label for="signup_name"> Last </label>
-                        <input id="name_last" type="text"  placeholder="Smith">
-                            </fieldset>
-            <fieldset form-horizontal>
-                  <legend> Address </legend>
-                  <div class="address_block">
-                      <div class="control-group">
-                      <label for="Address" class="control-label"> Address </label>
-                    <div class="controls">
-                  <input id="Address" type="text" placeholder="e.g. 1234 Candly Lane Court" > </input>
-            </div>
-      </div>
-    </div>
-
-      <div class="control-group">
-            <label for="City" class="control-label"> City </label>
-            <div class="controls">
-           <input id="City" type="text" placeholder="La Jolla"</input>
-      </div>
-    </div>
-
-<div class="control-group">
-          <label for="State" class="control-label"> State </label>
+              <label for="signup_name" class="control-label"> First </label>
               <div class="controls">
-                  <input id="State" type="text" placeholder="CA" class="input-small">
-                    </div> 
-                        </div>
-                            <div class="control-group">
-                               <label for="Zip" class="control-label"> Zip </label>
-                                  <div class="controls">
-                                    <input id="Zip" type="text" class="input-small" placeholder="92137"> </input>
-                                      </div>
-                                        </div>
-                                          </fieldset>
-                                  
-                                          <fieldset> 
-                                            <legend> Contact Information </legend>     
-                                              <div class="control-group">  
-            <label for="phone_number" class="control-label"> Phone Number </label>
-            <div class="controls">
-            <input id="phone_number" type="text" placeholder="(xxx) xxx-xxxx"> </input>
-      </div>
-    </div>
+             
+              <input id="name" type="text" placeholder="John"></input>
+            </div>
+                          
+                      <label for="signup_name" class="control-label"> Last </label>
+                      <div class="controls">
+                       <input id="name_last" type="text"  placeholder="Smith"></input>
+                      </div>
+                    </div>
+                  </div>
+        </fieldset>
 
-<div class="control-group"> 
-        <label for="email_address" class="control-label"> Email Address </label>
-        <div class="controls"> <input id="email_address" type="text" placeholder=" email@gmail.com"> </input></div>
+
+          <fieldset class="form-horizontal">
+            <div class="address_block">
+              <div class="control-group">
+                  <legend> Address </legend>
+                      <label for="Address" class="control-label"> Address </label>
+                      <div class="controls">
+                      <input id="Address" type="text" placeholder="e.g. 1234 Candly Lane Court"></input>
+                      </div>
+                      </div>
+
+                <div class="control-group">
+                  <label for="City" class="control-label"> City </label>
+                  <div class="controls">
+                  <input id="City" type="text" placeholder="La Jolla"></input>
+                  </div>
+                  </div>
+
+            <div class="control-group">
+              <label for="State" class="control-label"> State </label>
+              <div class="controls">
+              <input id="State" type="text" placeholder="CA" class="input-small">
+              </div> 
+              </div>
+
+            <div class="control-group">
+                  <label for="Zip" class="control-label"> Zip </label>
+                  <div class="controls">
+                  <input id="Zip" type="text" class="input-small" placeholder="92137"></input>
+                  </div>
+                  </div>
+                </div>
+      </fieldset>
+      
+
+            <fieldset class="form-horizontal"> 
+                    <legend> Contact Information </legend>     
+                    <div class="control-group">  
+                    <label for="phone_number" class="control-label"> Phone Number </label>
+                    <div class="controls">
+                    <input id="phone_number" type="text" placeholder="(xxx) xxx-xxxx"> </input>
+                      </div>
+                       </div>
+
+                  <div class="control-group"> 
+                     <label for="email_address" class="control-label"> Email Address </label>
+                      <div class="controls"> <input id="email_address" type="text" placeholder=" email@gmail.com"> </input></div>
         
-      </div>
+                  </div>
        </fieldset>
 
-<fieldset class="form-horizontal">
-  <div class="control-group">
+  
+  <fieldset class="form-horizontal">
+      <div class="control-group">
     <legend> Education </legend>
           <div class="education_block">
             <div class="control-block">
@@ -95,7 +106,7 @@
         <div class="control-block">
           <label class="control-label"> Degree </label>
           <div class="controls">
-            <input class="degree_name" type="text" class-"input-small"></input>
+            <input class="degree_name" type="text"></input>
           </div>
         </div>
         </div>
@@ -125,11 +136,18 @@
         <div class="control-block">
           <label class="control-label"> Role </label>
           <div class="controls">
-            <input class="role_name" type="text" class="input-small"></input>
+            <input class="role_name" type="text"></input>
+          </div>
+        </div>
+        <div class="control-block">
+          <div class="control-label"> Responsibilities </label>
+            <div class="controls">
+            <textarea></textarea>
           </div>
         </div>
         </div>
       </div>
+    </div>
         <span class="help-block">
 
 
@@ -142,15 +160,54 @@
 
 </fieldset>
 
+  
+    <fieldset class="form-horizontal">
+      <div class="control-group">
+            <div class="skills_block">
+        <legend> Skills </legend>
+              <label class="control-label"> Skill</label>
+              <div class="controls">
+                <input type="text"></input>
+              </div>
+            </div>
+            <div class="control-block">
+              <label class="control-label"> Category </label>
+              <div class="controls">
+                <input type="text" placeholder="Technical"></input>
+
+              </div>
+
+            </div>
+          </div>
+          <span class="skills_block">
+            <a href='#' class="skills_block_add">
+            +add
+          </a>
+        </span>
+
+    </fieldset>
+
   <fieldset class="form-horizontal">
       <legend> Accomplishments </legend>
            <div class="control-group">
               <div class="accomplishment_block">
-                <label class="control-label"> Accomplishment  </label>
-                <input type="text" class="input-small"> </input>
-
+                <label class="control-label"> Title  </label>
+                <div class="controls">
+                <input type="text"> </input>
+          </div>
     </div>
+    <div class="control-group">
+      <label class="control-label"> Description </label>
+      <div class="controls">
+        <input type="text"></input>
   </div>
+    </div>
+      <div class="control-group">
+        <label class="control-label"> Date </label>
+        <div class="controls">
+          <input type="text"></input>
+        </div>
+    </div>
   <span class="help-block"><a href='#' class="accomplishment_block_add">
     +add 
   </a>
@@ -197,44 +254,4 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-	 <h1> Sign up for my awesome app! </h1>
-	 <form>
-            <ul>
-                <li>
-                    <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="e.g. John Smith" />
-                </li>
-                <li>
-                    <label for="degree">BS Degree</label>
-                    <input id="degree" name="hasDegree" value="1" type="checkbox" />
-                </li>
-                <li>
-                    <label for="summary">Bio</label>
-                    <textarea id="summary"></textarea>
-                </li>
-                <li>
-                    <label for="dob">Birth Date</label>
-                    <input id="dob" type="date" />
-                </li>
-                <li>
-                    <label for="favcolor">Favorite Color</label>
-                    <input id="favcolor" type="color" />
-                </li>
-                <li>
-                    <label for="password">Password</label>
-                    <input id="password" type="password" />
-                </li>
-                <li>
-                    <label for="ready">Are you ready?</label>
-                    <select id="ready">                        <requires children - <options> 
-                        <option value="0">Yup</option>
-                        <option value="1">Nope</option>
-                     </select>
-                </li>
-                <li>
-                    <input type="submit" value="save &amp; continue" />
-                </li>
-            </ul>
-        </form>
-	</body> -->
-</html>
+	 

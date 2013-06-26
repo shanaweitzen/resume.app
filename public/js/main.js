@@ -27,54 +27,133 @@
 			var email_address = object.contact_info.email;
 			$('#email_address').html(email_address);
 
-	}
+//			var Institution = $.each(object.schools, function(index, item) {
+//				console.log(item);
+//			}
 
- 	});
-}); 
-$(document).ready(function() {
-	console.log('here');
+	//	}
+
+				//for (i=0); i<= educcation_block
+	//		});
+			
+
+	//	$(document).ready(function() {
+	//	console.log('here');
 
 	var education_block_link = $('.education_block_add');
-	console.log(education_block_link);
+		console.log(education_block_link);
 
-	education_block_link.click(function(){
+		education_block_link.click(function(){
 	 		var html=$('.education_block').first().clone();
 			html.css('display', 'none');
+			html.find('input').val('');
 			$(this).before(html);
 			html.slideDown(600);
-			html.find('input').val('');
-
 			return false;
 	
-	});
+		});
+	
 
-var experience_block_link = $('.experience_block_add');
-	console.log(experience_block_link);
+		var experience_block_link = $('.experience_block_add');
+			console.log(experience_block_link);
+			experience_block_link.click(function(){
+	 			var html=$('.experience_block').first().clone();
+				html.css('display', 'none');
+				html.find('input').val('');
+				$(this).before(html);
+				html.slideDown(600);
+				
+				return false;
+		});
 
-	experience_block_link.click(function(){
-	 		var html=$('.experience_block').first().clone();
-			html.css('display', 'none');
-			$(this).before(html);
-			html.slideDown(600);
-			html.find('input').val('');
-			return false;
-	});
+		
+		var skills_block_link = $('.skills_block_add');
+			console.log(skills_block_link);
+			skills_block_link.click(function(){
+					var html=$('.skills_block').first().clone();
+					$(this).before(html);
+					html.css('display','none');
+					$(this).before(html);
+					html.slideDown(600);
+					html.find('input').val('');
+					return false;
+		});
+
+		var accomplishment_block_link = $('accomplishment_block_add');
+				console.log(accomplishment_block_link);
+				accomplishment_block_link.click(function(){
+					var html=$('.accomplishment_block').first().clone();
+					html.css('display','none');
+					$(this).before(html);
+					html.slideDown(600);
+					html.find('input').val('');
+					return false;
+		}); 
+
+
  
+ 			 $('#userDataForm').submit(function(){
+ 				var userData = {};
  
+ 				console.log();
+ 				userData.name_first             = $('#name_first').val();
+ 				userData.name_last				= $('#name_last').val();
 
- });
-
- $('#userDataForm').submit(function(){
- 	var userData = {};
- 	userData.name = $('#name').val();
-
- 	userData.schools =[];
- 	var education_blocks= $('.education_block');
- 	console.log(education_blocks);
+ 				userData.email_address			= $('#email_address').val();
+ 				userData.phone_number			= $('#phone_number').val();
+ 				userData.street_number			= $('#street_number').val();
+ 				userData.zip                    = $('#zip').val();
+ 				userData.city     				= $('#city').val();
+ 				userData.state            		= $('#state').val();
 
 
- 	console.log(userData);
- 	return false;
+
+
+ 				userData.schools =[];
+ 				var education_block = $('.education_block');
+ 				console.log(education_block);
+ 				education_block.each(function(index, item){
+ 					userData.schools.push({
+ 						name 				: $(item).find('.schools_id').val(),
+ 						major				: $(item).find('.schools_degree').val(),
+ 					});
+ 				});
+ 				
+
+ 				userData.experiences= [];
+ 				var experience_block = $('.experience_block');
+ 				console.log(experience_block);
+ 				experience_block.each(function(index, item){
+ 					userData.experiences.push({
+ 						Organization 		: $(item).find('.Organization').val(),
+ 						Role				: $(item).find('.Role').val(),
+ 						Responsibilities    : $(item).find('.Responsibilities').val(),
+ 					});
+ 				});
+
+ 				/*
+
+ 					userData.skills = [];
+
+ 					var skills_block = $('.skills_block');
+
+ 			//		skills_block.each(funtion(index, item){
+ 			//			userData.skills.push({
+
+//
+ 	//					});
+ //					
+
+
+*/
+ 	});
+
+
+
+		}
+	});
+});
+
 /* for (i =0); i< education_blocks.length; i++ {
   can also do this: education_blocks.each(function(index, item){
 	userData.schools.push({
@@ -86,7 +165,7 @@ var experience_block_link = $('.experience_block_add');
  		school.name = education_blocks[i].find('input.name').val();
  		school.degree = education_blocks[i].find('input.degree').val();
  		userData.schools.push(school); */
- });
+// });
 
 
 
