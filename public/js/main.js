@@ -1,3 +1,13 @@
+ function print_html(data){
+ 	var html ='';
+ 	for (i in data) {
+ 		html += '<div class= "'+i+'">'+data[i]+'</div>';
+
+ 	}
+ 	return html;
+ }
+
+
  $(document).ready(function(){
  	console.log('im alive');
  	$.ajax('/api/resumes/51c207d4236ea4a370000001',{
@@ -27,7 +37,26 @@
 			var email_address = object.contact_info.email;
 			$('#email_address').html(email_address);
 
-//			var Institution = $.each(object.schools, function(index, item) {
+			 var Institution = object.schools.name;
+			 for (i=0 ; i< Institution.legnth ; i++) {
+			 	var school_name                  = object.schools[i].name;
+			 	var degree                       = object.schools[i].degree;
+			 	var start_month_year
+			 	var end_month_year
+			 	var major
+			 	var minor
+
+			 	var school_data {
+
+			 		'school_name'  : school_name,
+
+			 	}
+			 		$('#education').append(generate_html(school_data));
+
+			 }
+
+           
+//var Institution = $.each(object.schools, function(index, item) {
 //				console.log(item);
 //			}
 
@@ -139,6 +168,9 @@
 
  			//		skills_block.each(funtion(index, item){
  			//			userData.skills.push({
+
+ 						Skill               : $(item).find('.Skill').val(),
+ 						Category            : $(item).find('.Category').val(),
 
 //
  	//					});
