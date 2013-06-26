@@ -1,12 +1,3 @@
- function print_html(data){
- 	var html ='';
- 	for (i in data) {
- 		html += '<div class= "'+i+'">'+data[i]+'</div>';
-
- 	}
- 	return html;
- }
-
 
  $(document).ready(function(){
  	console.log('im alive');
@@ -37,24 +28,15 @@
 			var email_address = object.contact_info.email;
 			$('#email_address').html(email_address);
 
-			 var Institution = object.schools.name;
-			 for (i=0 ; i< Institution.legnth ; i++) {
-			 	var school_name                  = object.schools[i].name;
-			 	var degree                       = object.schools[i].degree;
-			 	var start_month_year
-			 	var end_month_year
-			 	var major
-			 	var minor
-
-			 	var school_data {
-
-			 		'school_name'  : school_name,
-
-			 	}
-			 		$('#education').append(generate_html(school_data));
-
+			
+			 for (i=0 ; i< object.schools.legnth; i++) {
+			 	var list = $('<ul>');
+			 	$('#education').append(list);
+			 			output_line_item('Institution', object.schools[i].name,list);
 			 }
-
+ 	function output_line_item(label_item, line_item, list){
+ 		list.append('<li><span class=\"label\">' + label_item + ': '+'</span>'+line_item+'</li>');
+ 	}
            
 //var Institution = $.each(object.schools, function(index, item) {
 //				console.log(item);
