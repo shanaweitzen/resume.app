@@ -29,15 +29,21 @@
 			$('#email_address').html(email_address);
 
 			
-			 for (i=0 ; i< object.schools.legnth; i++) {
-			 	var list = $('<ul>');
-			 	$('#education').append(list);
-			 			output_line_item('Institution', object.schools[i].name,list);
+			 function generateSchoolBlock( currentSchool,schoolData ){
+			 	var item = "<div> <span> "+schoolData.name+" </span> []<br> <span> "+ schoolData.degree+" "+schoolData.gpa+"</span> </div>";
+			 	$('#education_holder').append(item);
+			 	console.log(currentSchool, schoolData);
+
 			 }
- 	function output_line_item(label_item, line_item, list){
- 		list.append('<li><span class=\"label\">' + label_item + ': '+'</span>'+line_item+'</li>');
- 	}
-           
+			 console.log('education');
+ 			$.each(object.schools, generateSchoolBlock);
+
+ 			function generateExperienceBlock(currentExperience, experienceData){
+ 				var item ="<div><span>"+experienceData.organization+"</span><br><span>"+experienceData.project+"</span><br><span>"+experienceData.responsibilities+"</span></div>";
+ 				$('#experience_holder').append(item)
+ 			}
+           console.log('experience');
+           $.each(object.experience, generateExperienceBlock);
 //var Institution = $.each(object.schools, function(index, item) {
 //				console.log(item);
 //			}
