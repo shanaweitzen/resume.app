@@ -46,14 +46,14 @@
            $.each(object.experience, generateExperienceBlock);
 
            function generateSkillsBlock(currentSkill, skillData){
-           	var item ="<div><span>"+skillData.category+"</span><br><span>"+skillData.title+"</span><br></span></div>";
+           	var item ="<div><span>"+skillData.category+"</span>[]<br><span>"+skillData.title+"</span><br><br></span></div>";
            	$('#skills_holder').append(item);
            }
            console.log('skills');
            $.each(object.skill, generateSkillsBlock);
 
            function generateAccomplishmentsBlock(currentAccomplishment, accomplishmentData){
-           	var item="<div><span>"+accomplishmentData.title+"</span><br><span>"+accomplishmentData.description+"</span><br><span>"+accomplishmentData.month_year+"</span></div>";
+           	var item="<div><span>"+accomplishmentData.title+"</span>:<br><span>"+accomplishmentData.description+"</span>[*]<br><br><span>"+accomplishmentData.month_year+"</span></div>";
            	$('#accomplishment_holder').append(item);
 
            }
@@ -102,7 +102,7 @@
 					return false;
 		});
 
-		var accomplishment_block_link = $('accomplishment_block_add');
+		var accomplishment_block_link = $('.accomplishment_block_add');
 				console.log(accomplishment_block_link);
 				accomplishment_block_link.click(function(){
 					var html=$('.accomplishment_block').first().clone();
