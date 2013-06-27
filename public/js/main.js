@@ -52,6 +52,14 @@
            console.log('skills');
            $.each(object.skill, generateSkillsBlock);
 
+           function generateAccomplishmentsBlock(currentAccomplishment, accomplishmentData){
+           	var item="<div><span>"+accomplishmentData.title+"</span><br><span>"+accomplishmentData.description+"</span><br><span>"+accomplishmentData.month_year+"</span></div>";
+           	$('#accomplishment_holder').append(item);
+
+           }
+            console.log('accomplishments')
+            $.each(object.accomplishments, generateAccomplishmentsBlock);
+
 
 
 
