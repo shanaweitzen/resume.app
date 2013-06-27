@@ -32,7 +32,7 @@
 			 function generateSchoolBlock( currentSchool,schoolData ){
 			 	var item = "<div> <span> "+schoolData.name+" </span> []<br> <span> "+ schoolData.degree+" "+schoolData.gpa+"</span> </div>";
 			 	$('#education_holder').append(item);
-			 	console.log(currentSchool, schoolData);
+			 	/*console.log(currentSchool, schoolData);*/
 
 			 }
 			 console.log('education');
@@ -42,14 +42,14 @@
  				var item ="<div><span>"+experienceData.organization+"</span><br><span>"+experienceData.project+"</span><br><span>"+experienceData.responsibilities+"</span></div>";
  				$('#experience_holder').append(item);
  			}
-           console.log('experience');
+           /*console.log('experience');*/
            $.each(object.experience, generateExperienceBlock);
 
            function generateSkillsBlock(currentSkill, skillData){
            	var item ="<div><span>"+skillData.category+"</span>[]<br><span>"+skillData.title+"</span><br><br></span></div>";
            	$('#skills_holder').append(item);
            }
-           console.log('skills');
+          /* console.log('skills');*/
            $.each(object.skill, generateSkillsBlock);
 
            function generateAccomplishmentsBlock(currentAccomplishment, accomplishmentData){
@@ -57,15 +57,15 @@
            	$('#accomplishment_holder').append(item);
 
            }
-            console.log('accomplishments')
+            /*console.log('accomplishments')*/
             $.each(object.accomplishments, generateAccomplishmentsBlock);
 
 
 
 
 	var education_block_link = $('.education_block_add');
-		console.log(education_block_link);
-
+		/*console.log(education_block_link);
+*/
 		education_block_link.click(function(){
 	 		var html=$('.education_block').first().clone();
 			html.css('display', 'none');
@@ -78,7 +78,7 @@
 	
 
 		var experience_block_link = $('.experience_block_add');
-			console.log(experience_block_link);
+			/*console.log(experience_block_link);*/
 			experience_block_link.click(function(){
 	 			var html=$('.experience_block').first().clone();
 				html.css('display', 'none');
@@ -91,7 +91,7 @@
 
 		
 		var skills_block_link = $('.skills_block_add');
-			console.log(skills_block_link);
+			/*console.log(skills_block_link);*/
 			skills_block_link.click(function(){
 					var html=$('.skills_block').first().clone();
 					$(this).before(html);
@@ -118,16 +118,16 @@
  			 $('#userDataForm').submit(function(){
  				var userData = {};
  
- 				console.log();
- 				userData.name_first             = $('#name_first').val();
- 				userData.name_last				= $('#name_last').val();
+ 				/*console.log();*/
+ 				userData.name_first             = $('.name_first').val();
+ 				userData.name_last				= $('.name_last').val();
 
- 				userData.email_address			= $('#email_address').val();
- 				userData.phone_number			= $('#phone_number').val();
- 				userData.street_number			= $('#street_number').val();
- 				userData.zip                    = $('#zip').val();
- 				userData.city     				= $('#city').val();
- 				userData.state            		= $('#state').val();
+ 				userData.email_address			= $('.email_address').val();
+ 				userData.phone_number			= $('.phone_number').val();
+ 				userData.street_number			= $('.street_number').val();
+ 				userData.zip                    = $('.zip').val();
+ 				userData.city     				= $('.city').val();
+ 				userData.state            		= $('.state').val();
 
 
 
@@ -153,7 +153,7 @@
  						Responsibilities    : $(item).find('.Responsibilities').val(),
  					});
  				});
-
+ console.log(userData);
  				/*
 
  					userData.skills = [];
@@ -171,7 +171,7 @@
  //					
 
 
-*/
+*/ return false;
  	});
 
 
