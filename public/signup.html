@@ -14,240 +14,253 @@
         </script>
 		<style>
 			
-			form {
-        margin: auto;
-      }
+			
 
 			</style>
 	</head>
 	<body>
     <form id="userDataForm">
+      
       <fieldset class="form-horizontal">
         <div class="name_block">
-        <div class="control-group">
-          <legend>Name</legend>
-          
-              <label for="signup_name" class="control-label"> First </label>
-              <div class="controls">
-             
-              <input id="name" type="text" placeholder="John"></input>
+          <div class="control-group">
+            <legend>
+              Name
+            </legend>
+            <label class="control-label">
+              First
+            </label>
+            <div class="controls">
+              <input class="name_first" type="text" placeholder="John">
+            </input>
             </div>
-                          
-                      <label for="signup_name" class="control-label"> Last </label>
-                      <div class="controls">
-                       <input id="name_last" type="text"  placeholder="Smith"></input>
-                      </div>
-                    </div>
-                  </div>
-        </fieldset>
-
-
-          <fieldset class="form-horizontal">
-            <div class="address_block">
-              <div class="control-group">
-                  <legend> Address </legend>
-                      <label for="Address" class="control-label"> Address </label>
-                      <div class="controls">
-                      <input id="Address" type="text" placeholder="e.g. 1234 Candly Lane Court"></input>
-                      </div>
-                      </div>
-
-                <div class="control-group">
-                  <label for="City" class="control-label"> City </label>
-                  <div class="controls">
-                  <input id="City" type="text" placeholder="La Jolla"></input>
-                  </div>
-                  </div>
-
-            <div class="control-group">
-              <label for="State" class="control-label"> State </label>
-              <div class="controls">
-              <input id="State" type="text" placeholder="CA" class="input-small">
-              </div> 
-              </div>
-
-            <div class="control-group">
-                  <label for="Zip" class="control-label"> Zip </label>
-                  <div class="controls">
-                  <input id="Zip" type="text" class="input-small" placeholder="92137"></input>
-                  </div>
-                  </div>
-                </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              Last
+            </label>
+            <div class="controls">
+              <input class="name_last" type="text" placeholder="Smith">
+            </input>
+            </div>
+          </div>
+        </div>
       </fieldset>
-      
 
-            <fieldset class="form-horizontal"> 
-                    <legend> Contact Information </legend>     
-                    <div class="control-group">  
-                    <label for="phone_number" class="control-label"> Phone Number </label>
-                    <div class="controls">
-                    <input id="phone_number" type="text" placeholder="(xxx) xxx-xxxx"> </input>
-                      </div>
-                       </div>
 
-                  <div class="control-group"> 
-                     <label for="email_address" class="control-label"> Email Address </label>
-                      <div class="controls"> <input id="email_address" type="text" placeholder=" email@gmail.com"> </input></div>
-        
-                  </div>
-       </fieldset>
-
-  
-  <fieldset class="form-horizontal">
-      <div class="control-group">
-    <legend> Education </legend>
-          <div class="education_block">
-            <div class="control-block">
-            <label class="control-label"> School </label>
+      <fieldset class="form-horizontal">
+        <div class="address_block">
+          <div class="control-group">
+            <legend>Address</legend>
+            <label class="control-label">
+              Address
+            </label>
             <div class="controls">
-            <input class="school_name" type="text"></input>  
-          </div>
-        </div>
-        <div class="control-block">
-          <label class="control-label"> Degree </label>
-          <div class="controls">
-            <input class="degree_name" type="text"></input>
-          </div>
-        </div>
-        </div>
-      </div>
-        <span class="help-block">
-
-
-
-    <a href='#' class="education_block_add">
-     + add 
-    </a>
-  </span>
-        
-
-</fieldset>
-
-<fieldset class="form-horizontal">
-  <div class="control-group">
-    <legend> Experience </legend>
-          <div class="experience_block">
-            <div class="control-block">
-            <label class="control-label"> Organization </label>
-            <div class="controls">
-            <input class="school_name" type="text" class="input-small"></input>  
-          </div>
-        </div>
-        <div class="control-block">
-          <label class="control-label"> Role </label>
-          <div class="controls">
-            <input class="role_name" type="text"></input>
-          </div>
-        </div>
-        <div class="control-block">
-          <div class="control-label"> Responsibilities </label>
-            <div class="controls">
-            <textarea></textarea>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-        <span class="help-block">
-
-    <a href='#' class="experience_block_add"> + add </a>
-  </span>
-        
-
-</fieldset>
-
-  
-    <fieldset class="form-horizontal">
-      <div class="control-group">
-            <div class="skills_block">
-        <legend> Skills </legend>
-              <label class="control-label"> Skill</label>
-              <div class="controls">
-                <input type="text"></input>
-              </div>
+              <input class="stree_nummer" type="text" placeholder="10 Norton Rd">
+            </input>
             </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              City
+            </label>
+            <div class="controls">
+              <input class="city_name" type="text" placeholder="East Brunswick">
+            </input>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              State
+            </label>
+            <div class="controls">
+              <input class="state_name" type="text" placeholder="NJ">
+             </input>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              Zip
+            </label>
+            <div class="controls">
+              <input class="zip_number" type="numbers" placeholder="92130">
+            </input>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="form-horizontal">
+          <legend> Contact Information </legend>
+          <div class="control-group">
+            <label for="phone_number" class="control-label">
+              Phone Number </label>
+              <div class="controls">
+                <input id="phone_number" type="text" placeholder="(xxx)xxx-xxxx">
+              </input>
+              </div>
+          </div>
+          <div class="control-group">
+            <label for="email_address" class="control-label">
+              Email Address
+            </label>
+            <div class="controls">
+              <input id="email_address" type="text" placeholder="me@gmail.com">
+            </input>
+            </div>
+          </div>
+      </fieldset>
+
+      <fieldset class="form-horizontal">
+        <div class="education_block">
+        <div class="control-group">
+          <legend>Education</legend>
             <div class="control-group">
-              <label class="control-label"> Category </label>
+              <label class="control-label">
+                School
+              </label>
               <div class="controls">
-                <input type="text" placeholder="Technical"></input>
-
+                <input class="school_name" type="text" placeholder="Rutgers">
+              </input>
               </div>
-
             </div>
           </div>
-          <span class="skills_block">
-            <a href='#' class="skills_block_add">
+          <div class="control-group">
+            <label class="control-label">
+              Degree
+            </label>
+            <div class="controls">
+              <input class="degree_name" type="text" placeholder="Civil Engineering">
+            </input>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              Dates
+            </label>
+            <div class="controls">
+              <input class="school_years" type="digits" placeholder="1980-1984"></input>
+            </div>
+          </div>
+        </div>
+        <span class="help-block">
+          <a href='#' class="education_block_add">
             +add
           </a>
         </span>
+      </fieldset>
 
-    </fieldset>
-
-  <fieldset class="form-horizontal">
-      <legend> Accomplishments </legend>
-           <div class="control-group">
-              <div class="accomplishment_block">
-                <label class="control-label"> Title  </label>
-                <div class="controls">
-                <input type="text"> </input>
+      <fieldset class="form-horizontal">
+        <div class="experience_block">
+          <div class="control-group">
+            <legend>Experience</legend>
+            <label class="control-label">
+              Organization
+            </label>
+            <div class="controls">
+              <input class="organization_name" type="text" placeholder="Initiative"></input>
+            </div>
           </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label"> Description </label>
-      <div class="controls">
-        <input type="text"></input>
-  </div>
-    </div>
-      <div class="control-group">
-        <label class="control-label"> Date </label>
-        <div class="controls">
-          <input type="text"></input>
+          <div class="control-group">
+            <label class="control-label">
+              Role
+            </label>
+            <div class="controls">
+              <input class="role_name" type="text" placeholder="Assistant Media Planner">
+              </input>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              Responsibilities
+            </label>
+            <div class="controls">
+              <textarea></textarea>
+            </div>
+          </div>
         </div>
-    </div>
-  <span class="help-block"><a href='#' class="accomplishment_block_add">
-    +add 
-  </a>
-</span>
+        <span class="help-block">
+          <a href="#" class="experience_block_add">
+            +add
+          </a>
+        </span>
+      </fieldset>
 
+      <fieldset class="form-horizontal">
+        <div class="skills_block">
+          <div class="control-group">
+            <legend>Skills</legend>
+            <label class="control-label">
+              Skill
+            </label>
+            <div class="controls">
+              <input class="skill_name" type="text" placeholder="Excel">
+            </input>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              Category
+            </label>
+            <div class="controls">
+              <input class="category_name" type="text" placeholder="Technical">
+            </input>
+            </div>
+          </div>
+        </div>
+        <span class="skills_block">
+          <a href="#" class="skills_block_add">
+            +add
+          </a>
+        </span>
+      </fieldset>
 
-</fieldset>
-<button type="submit" class="btn"> Save &amp; Continue </button>
-</form>
+      <fieldset class="form-horizontal">
+        <div class="accomplishment_block">
+          <div class="control-group">
+            <legend>Accomplishments</legend>
+            <label class="control-label">
+              Accomplishment
+            </label>
+            <div class="controls">
+              <input class="accomplishment_name" type="text"placeholder="Special Olypics Volunteer">
+            </input>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              Description
+            </label>
+            <div class="controls">
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">
+              Date(s)
+            </label>
+            <div class="controls">
+              <input class="accomplishment_date" type="calendar">
+            </input>
+            </div>
+          </div>
+        </div>
+        <span class="help-block">
+          <a href="#" class="accomplishment_block_add">
+            +add
+          </a>
+        </span>
+      </fieldset>
+      
+        
+        <button type="submit" class="btn">
+          Save &amp; Continue
+        </button>
+     
+     
+
+    </form>
+
   </body>
   </html>
-
-  <!--    <div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    // init the FB JS SDK
-    FB.init({
-      appId      : '367128903410244',                        // App ID from the app dashboard
-      status     : true,                                 // Check Facebook Login status
-      xfbml      : true                                  // Look for social plugins on the page
-    });
-    function cb_login(response){
-        if(response.authResponse){
-      
-        console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function(response) {
-            $('#name').val(response.name);
-            console.log(response);
-        });
-       
-        } else {
-    console.log('User cancelled login or did not fully authorize.');
-   }
- });
-  };
-
-  // Load the SDK asynchronously
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
-	 

@@ -1,10 +1,12 @@
+
+html {
+	background:black ;
+}
 body{
 	position: relative;
+	background: white;
 }
-html {
-	background: rgb(123, 121, 143);
-}
-#container {
+ #container {
 	
 	margin: 0 auto;
 	padding: 10px;

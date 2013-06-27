@@ -40,22 +40,20 @@
 
  			function generateExperienceBlock(currentExperience, experienceData){
  				var item ="<div><span>"+experienceData.organization+"</span><br><span>"+experienceData.project+"</span><br><span>"+experienceData.responsibilities+"</span></div>";
- 				$('#experience_holder').append(item)
+ 				$('#experience_holder').append(item);
  			}
            console.log('experience');
            $.each(object.experience, generateExperienceBlock);
-//var Institution = $.each(object.schools, function(index, item) {
-//				console.log(item);
-//			}
 
-	//	}
+           function generateSkillsBlock(currentSkill, skillData){
+           	var item ="<div><span>"+skillData.category+"</span><br><span>"+skillData.title+"</span><br></span></div>";
+           	$('#skills_holder').append(item);
+           }
+           console.log('skills');
+           $.each(object.skill, generateSkillsBlock);
 
-				//for (i=0); i<= educcation_block
-	//		});
-			
 
-	//	$(document).ready(function() {
-	//	console.log('here');
+
 
 	var education_block_link = $('.education_block_add');
 		console.log(education_block_link);
