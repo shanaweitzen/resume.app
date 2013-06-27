@@ -137,8 +137,8 @@
  				console.log(education_block);
  				education_block.each(function(index, item){
  					userData.schools.push({
- 						name 				: $(item).find('.schools_id').val(),
- 						major				: $(item).find('.schools_degree').val(),
+ 						name 				: $(item).find('.school_name').val(),
+ 						major				: $(item).find('.degree_name').val(),
  					});
  				});
  				
@@ -148,10 +148,23 @@
  				console.log(experience_block);
  				experience_block.each(function(index, item){
  					userData.experiences.push({
- 						Organization 		: $(item).find('.Organization').val(),
- 						Role				: $(item).find('.Role').val(),
+ 						Organization 		: $(item).find('.organization_name').val(),
+ 						Role				: $(item).find('.role_name').val(),
  						Responsibilities    : $(item).find('.Responsibilities').val(),
  					});
+ 				});
+
+ 				userData.accomplishments=[];
+ 				var accomplishment_block = $('.accomplishment_block');
+ 				console.log(accomplishment_block);
+ 				accomplishment_block.each(function(index, item){
+ 					userData.accomplishments.push({
+ 						description         : $(item).find('.description').val(),
+ 						title				: $(item).find('.title_name').val(),
+ 						month_year			: $(item).find('.month_year').val(),
+
+ 					});
+
  				});
  console.log(userData);
  				/*
