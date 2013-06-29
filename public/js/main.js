@@ -1,8 +1,11 @@
 $(document).ready(function(){
 	console.log('im alive');
-	$.ajax('/api/resumes/51c207d4236ea4a370000001',{
+	$.ajax('/api/resumes',{
 		complete: function(response){
-			var object = response.responseJSON;
+			var object = response.responseJSON[0];
+
+			$('#name').attr('data-id', object.id);
+
 			console.log(response.responseJSON);
 			var first = object.name_first;
 			var last = object.name_last;
@@ -179,7 +182,20 @@ $(document).ready(function(){
 						return false;
 				});
 
-});
+
+				 $('#delete_button').click(function() {
+						// read the 'data-id' attribute of the id1
+						var id = $('#name').data('id');
+						console.log(id); // log the id just to make sure
+						// send an ajax request to delete the resume
+						$.ajax({
+							url : '/api/resumes/'+id,
+							type : 'DELETE'
+						});
+						window.location = window.location; // this will refresh the page
+					});
+
+}); /* end document ready */
 
 
 				

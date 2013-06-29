@@ -5,6 +5,7 @@ html {
 body{
 	position: relative;
 	background: white;
+	margin: 0 auto;
 }
  #container {
 	
@@ -16,8 +17,13 @@ body{
 
 
 }
+#name {
+	left: 50px ;
+	top:  50px;
+}
 section{
 	font-family: sans-serif;
+
 
 
 }
