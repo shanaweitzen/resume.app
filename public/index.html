@@ -5,31 +5,86 @@
 		<link rel="stylesheet" href="css/style.css">
 		
 		<link rel="stylesheet" href="css/bootstrap.css">
+		 <link rel="stylesheet" href="css/bootstrap.css">
 
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<!-- /* <script type="text/javascript" src="js/delete.js"></script> */ -->
 	</head>
 	<body>
-		<div class="container">
+	
+			<section id="navbar">
+				<div class="page-header">
+				
+				 </div>
+			 <div class="navbar navbar-inverse">
+			 	<div class="navbar-inner navbar-fixed-top">
+			 		<div class="container" style="width: auto;">
+			 			<a class=" btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			 			<span class="icon-bar" ></span>
+           				<span class="icon-bar"></span>
+           				 <span class="icon-bar"></span>
+			 			</a>
+			 			<a class="brand" href="x">Resume App</a>
+			 			<div class="nav-collapse">
+			 				<ul class="nav">
+			 					<li class="active">
+			 						<a href="#">LinkedIn</a>
+			 					</li>
+			 					<li>
+			 						<a href="#">Twitter</a>
+			 					</li>
+			 					<li>
+			 						<a href="#">Website</a>
+			 					</li>
+			 					<li><a href="#">Accomplishments</a></li>
+			 					<li class="dropdown">
+			 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			 							Dropdown
+			 						<b class="caret"></b>
+			 					 </a>
+			 					 <ul class="dropdown-menu">
+			 					 		<li>Contact Info</li>
+			 					 		<li>Education<li>
+			 					 		<li>Experience</li>
+			 					 		<li>Skills</li>
+			 					 		<li>Accomplishments</li>
+			 					 	</ul>
+			 					</li>
+			 				</ul> 
+			 				<form class="navbar-search pull-right" action>
+			 					<input type="text" class="search-query span2" placeholder="Search"></input>
+			 				</form>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
+			</section> 
 		<div class="row">
 			
-			<div class="span4 offset2"> Span4</div>
+			<div class="span4 offset2"> <h1></h1></div>
 			<div class="span6"> 
-				<div class="row"> <div class="span3">Three</div><div class="span3"> Six</div>
+				<div class="row"> <div class="span3"></div><div class="span3"></div>
 				</div>
 			</div>
 		</div>
-	</div> 
-		<div id="contaier">
+	
+		<div id="container">
 			<div id="id1">
+				<div class="row">
+					<div class="span3 offset1"><h2><div id="name"></div></h2></div>
+				</div>
+				<!--  <div class="row">
+					<div class="span2" id="address"></div><div class="span2" id="street_number"></div><div class="span2" id="city"></div><div class="span2" id="state"></div>
+				</div>  -->
 				<h3>
 					<div id="name"> 
 					</div>
 				</h3>
 			</div>
+			<section>
 			<div id="id2">
-				<div id="address">
+				<div id="address"> <h3>Address</h3>
 					<div id="street_number">
 						street number
 					</div>
@@ -44,6 +99,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div id="id3">
 				<div id="contact_info">
 					<div id="phone_number">
@@ -54,6 +110,8 @@
 					</div>
 				</div>
 			</div>
+			</section>
+			<section>
 			<div id="education">
 				<h3>
 					Education
@@ -61,6 +119,15 @@
 				<div id="education_holder">
 				</div>
 			</div>
+		</section>
+		<section>
+			<div id="Experience">
+				<h3>Experience</h3>
+				<div  id="experience_holder">
+				</div>
+			</div>
+		</section>
+		<section>
 			<div id="Skills">
 				<h3>
 					Skills
@@ -68,6 +135,8 @@
 				<div id="skills_holder">
 				</div>
 			</div>
+		</section>
+		<section>
 			<div id="Accomplishments">
 				<h3>
 					Accomplishments
@@ -75,8 +144,9 @@
 				<div id="accomplishment_holder">
 				</div>
 			</div>
+		</section>
 			<div class="delete_button">
-			<button type="submit"id="delete_button">
+			<button type="submit" class="btn" id="delete_button">
 				Delete
 			</button>
 		</div>
