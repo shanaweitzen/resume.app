@@ -5,39 +5,25 @@ html {
 body{
 	position: relative;
 	background: white;
+	width: 1000px;
 	margin: 0 auto;
 }
+
  #container {
-	
+	width: 950px;
 	margin: 0 auto;
 	padding: 10px;
 	border-width: 5px;
 	border-style: solid;
 	background: #68CAE8;
+	position: absolute;
 
 
 }
+
 #name {
 	left: 50px ;
 	top:  50px;
 }
-section{
-	font-family: sans-serif;
 
 
-
-}
-
-header, h1, h2, h3, p 
-{
-	font-family: sans-serif;
-	padding-left: 5px;
-	
-}
-h1, h2{
-	border-top: 1px double;
-}
-
-title{
-	padding-left: 5px;
-}

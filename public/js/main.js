@@ -190,9 +190,13 @@ $(document).ready(function(){
 						// send an ajax request to delete the resume
 						$.ajax({
 							url : '/api/resumes/'+id,
-							type : 'DELETE'
+							type : 'DELETE',
+							complete: function(){
+								window.location = window.location;
+
+							}
 						});
-						window.location = window.location; // this will refresh the page
+						 // this will refresh the page
 					});
 
 }); /* end document ready */
