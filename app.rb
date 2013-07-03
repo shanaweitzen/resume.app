@@ -33,24 +33,22 @@ end
 # end
 
 
-# get '/' do 
-#   content_type :json 
+get '/' do 
+  content_type :json 
 
-#   docs = Doc.all
+  docs = Doc.all
 
-#   docs.to_json
+  docs.to_json
   
-# end
+end
 
-# get '/:id' do
-#   content_type :json
-#   data = JSON.parse(reuquest.body,read)["request"]
+get '/:id' do
+  content_type :json
 
-#   doc = Doc.find params[:id]
+  doc = Doc.find params[:id]
 
-#   doc.to_json
-
-# end
+  doc.to_json
+end
 
 post '/' do
   content_type :json
@@ -59,20 +57,20 @@ post '/' do
   doc.to_json 
 end
 
-#  put '/:id' do
-# data = JSON.parse(request.body.read)["resume"] 
-#   doc = Doc.find params[:id]
-#  doc.update_attributes!(data)
-#  doc.to_json
+ put '/:id' do
+  content_type :json
+  data = JSON.parse(request.body.read)["resume"] 
+  doc = Doc.find params[:id]
+  doc.update_attributes!(data)
+  doc.to_json
 
-# end
+end
 
-# delete '/' do
-# data = JSON.parse(request.body.read)["resume"] 
-# doc = Doc.find (params[:id])
-#     doc.destroy
-
-# end
+delete '/:id' do
+  doc = Doc.find (params[:id])
+  doc.destroy
+  "Goodbye!"
+end
 
 # var data = {"resume:" {"name_first":"Bob"}}
 
