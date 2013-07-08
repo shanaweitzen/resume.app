@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	console.log('im alive');
-	$.ajax('/api/resumes',{
+	$.ajax('/',{
 		complete: function(response){
 			var object = response.responseJSON[0];
 
@@ -196,6 +196,11 @@ $(document).ready(function(){
 
 							}
 						});
+
+						$('.dropdown-toggle').dropdown();
+						$().dropdown('toggle');
+
+
 						 // this will refresh the page
 					});
 

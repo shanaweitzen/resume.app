@@ -71,6 +71,7 @@ delete '/:id' do
   doc.destroy
   "Goodbye!"
 end
+# DONT UN COMMENT BELOW
 
 # var data = {"resume:" {"name_first":"Bob"}}
 
