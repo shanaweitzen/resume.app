@@ -14,17 +14,51 @@ body {
   background-color: #ffffff;
 
 }
-
-/*iv #id1, #id2,#id3, #education, #skills, #accomplishments{
+/*
+iv #id1, #id2,#id3, #education, #skills, #accomplishments{
 	border-bottom-style: double;
 	border-color: black;
 	border-bottom: 2px;
 
 } */
+#contact_info{
+  border-bottom-color: black;
+  border-bottom-style: double;
+  border-bottom-width: 1px;
+  border-top-color: black;
+  border-top-style: double;
+  border-top-width: 2px;
+  padding: 15px;
+  margin: 10px;
+}
+#app{
+  margin:0 auto;
+  width:940px;
+  padding-top: 10px;
+}
 
-section{
-	border-bottom-color: black;
-	border-bottom-style: double;
+#name{
+ margin-top: 10px;
+}
+
+
+
+#page-header{
+  padding: 10px;
+  margin:10px;
+  border: 2px red solid;
+}
+.control_label{
+  border:1px red solid;
+}
+#container-form{
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+
+}
+#section1{
+
 }
 
 #userDataForm{
@@ -32,6 +66,8 @@ section{
 	margin:0 auto;
 	padding-left: 10px;
 	background-color:white;
+  border:2px red solid ;
+
 	
 }
 
